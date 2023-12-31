@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    padding: 50px;
+}
+.bar{
+    
+    height: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #dadada;
+    /* overflow: hidden; */
+    margin-bottom: 20px;
+}
+
+.moving{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    /* transition: width ease-in 1s; */
+   
+}
+
+button{
+    border-radius: 8px;
+    margin-left: 50px;
+    /* border: none; */
+    background-color:lightblue;
+    font-weight: 700;
+    color: rgb(19, 54, 73);
+    cursor: pointer;
+}
