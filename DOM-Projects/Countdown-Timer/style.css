@@ -1,0 +1,21 @@
+body{
+  background-color: black;
+}
+.middle{
+  background-color: seagreen;
+  height: 150px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button{
+  border-radius: 8px;
+  height: 30px;
+  background-color: orange;
+  color:white;
+  font-weight: 400;
+}
+h1{
+  color: aqua;
+}
