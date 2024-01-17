@@ -7,6 +7,7 @@ let dragElement = document.querySelectorAll(".dragelement")
 dragElement.forEach((elem)=>{
   elem.addEventListener("dragstart", (e)=>{
       let selected = e.target
+      elem.classList.add("dragging")
       // console.log(selected)
 
       toBox.addEventListener("dragover", (e)=>{
