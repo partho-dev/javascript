@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gilory";
+}
+
+html{
+        font-size: 62.5%;
+    }
+ body{
+        font-size: 1.6rem;
+    }
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(pink, cyan)
+}
+
+body{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    height: 90vh;
+    background-color: #332F32;
+    width: 22%;
+    /* position: absolute; */
+    /* left: 2%; */
+    border-radius: 2.5vw;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 16px 11px 28px 0px rgba(245,245,245,1);
+}
+
+.notch{
+    height: 10%;
+    width: 50%;
+    background-color: rgb(28, 26, 26);
+    position: absolute;
+    left: 25%;
+    top: -4%;
+    border-radius: 2vw;
+}
+.productList{
+    /* margin-top: 1vw; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* background-color: red; */
+}
+
+.productList::-webkit-scrollbar{
+    display: none;
+}
+
+.singleProduct{
+    height: 100%;
+    width: 35%;
+    background-color:rgb(53, 51, 51);
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgage{
+    height: 70%;
+    width: 100%;
+}
+
+.imgage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.desc{
+    margin-top: 0.5vw;
+    padding: 1vw;
+}
+.desc h6{
+    font-weight: 400;
+    color: white;
+    font-size: 0.8vw;
+}
+
+.polularProducts{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 1vw;
+}
+
+.polularProducts h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4vw;
+    color: wheat;
+}
+
+.polularProducts .singleProduct{
+    margin-top: 0.5vw;
+}
+
+.popularProductsContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1vw;
+    overflow-x: auto;
+}
+
+.polularProducts ::-webkit-scrollbar{
+    display: none;
+}
+
+.addDelete{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.addDelete .inputField{
+    display: flex;
+    /* margin-left: 0.3vw; */
+}
+.addDelete .inputField h1{
+    text-transform: uppercase;
+    /* text-align: center; */
+    font-weight: 400;
+    font-size: 1.4vw;
+    color: wheat;
+}
+.addDelete .inputField input{
+    margin-left: 0.3vw;
+    border-radius: 0.4vw;
+    padding: 0 1vw;
+    border: none;
+}
+.displayiTems{
+    margin-top: 1vw;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1vw;
+    padding: 0 1vw;
+    justify-content: flex-start;
+    overflow-x: auto;
+}
+
+.displayiTems::-webkit-scrollbar{
+    display: none;
+}
+
+.displayiTems .circle{
+    flex-shrink: 0;
+    height: 6vw;
+    width: 6vw;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    background-color: red;
+}
+
+.displayiTems .circle h5,i{
+    font-weight: 400;
+    font-size: 1vw;
+    color: white;
+}
+
+.displayiTems .circle i:hover{
+    scale: 1.2;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.displayiTems .circle i{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .main{
+        height: 100vh;
+        background-color: #332F32;
+        width: 100%;
+        /* position: absolute; */
+        /* left: 2%; */
+        border-radius: 2.5vw;
+        position: relative;
+        overflow: hidden;
+        /* box-shadow: 16px 11px 28px 0px rgba(245,245,245,1); */
+    }
+
+    .productList{
+        /* margin-top: 1vw; */
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        gap: 1.5vw;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        /* background-color: red; */
+    }
+
+    .polularProducts{
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 2vw;
+    }
+}
+
+webkit

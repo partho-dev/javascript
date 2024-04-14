@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gilory";
+}
+
+html{
+        font-size: 62.5%;
+    }
+ body{
+        font-size: 1.6rem;
+    }
+
+html, body {
+    height: 100%;
+    width: 100%;
+    /* background-color:#D0D4CA; */
+    background-color: rgba(20, 19, 19, 0.821);
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+    background: rgb(47, 46, 46);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+
+nav h1{
+    color: white;
+    font-weight: 400;
+}
+.ri-delete-bin-6-line {
+    color: white;
+    font-weight: 400;
+    font-size: 2vw;
+    margin-right: 4vw;
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav input {
+    /* padding: 0.1vw; */
+    height: 3vw;
+    border-radius: 2vw;
+    border: none;
+    width: 15vw;
+    font-size: 0.9vw;
+    padding: 1vw;
+}
+
+nav input:focus-visible{
+    outline: none;
+    caret-color: gray;
+}
+
+.section2{
+    min-height: 75vh;
+    width: 100%;
+    background-color: gray;
+    margin-top: 10vh;
+    box-sizing: border-box;
+}
+
+.section2 h1 {
+    padding: 1vw 10vw;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.infineText{
+    height: 25vh;
+    width: 100%;
+    white-space: nowrap;
+    background-color: silver;
+    overflow: hidden;
+    position: relative;
+}
+
+.infineText h1{
+    position: absolute;
+    font-size: 8vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    color: white;
+    animation: anim 20s linear infinite;
+}
+
+
+.infineText span {
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+}
+
+@keyframes anim {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
