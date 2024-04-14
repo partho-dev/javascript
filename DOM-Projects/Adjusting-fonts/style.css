@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilory";
+}
+
+html{
+      font-size: 62.5%;
+  }
+body{
+      font-size: 1.6rem;
+  }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  /* background-color:#D0D4CA; */
+  background-color: rgba(20, 19, 19, 0.821);
+}
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.main{
+  width: 20%;
+  height: 70vh;
+}
+
+.box{
+  max-width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+img{
+  width: 100%;
+  height: 70%;
+}
+
+h5{
+  color: wheat;
+  /* white-space: nowrap; */
+  font-weight: 400;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  /* text-align: justify; */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
