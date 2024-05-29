@@ -1,0 +1,36 @@
+let dragelement = document.querySelectorAll(".dragelement")
+let leftBox = document.querySelector(".from")
+let rightBox = document.querySelector(".to")
+
+dragelement.forEach((elem) => {
+  elem.addEventListener("dragstart", (e) => {
+    elem.classList.add("whileDragging")
+    // console.log(elem.textContent)
+    e.dataTransfer.setData("text/plain", elem.textContent);
+  });
+
+  elem.addEventListener("dragend", ()=>{
+    elem.classList.remove("whileDragging")
+  })
+});
+
+
+rightBox.addEventListener("dragover", (e) => {
+  e.preventDefault();
+});
+
+rightBox.addEventListener("drop", (e) => {
+  e.preventDefault();
+  // console.log("Dropping")
+
+  let data = e.dataTransfer.getData("text/plain");
+  // console.log(`Data is dropped ${data}`) /* List Item 1 */
+
+  let newElement = document.createElement("h1");
+  // console.log(newElement)
+  newElement.textContent = data;
+  // console.log(data)
+  newElement.classList.add("dragelement")  /*This line is to make sure the target also retain the same CSS as source*/
+  newElement.classList.add("h1")
+  rightBox.appendChild(newElement);
+});

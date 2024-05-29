@@ -1,0 +1,49 @@
+
+body{
+  background: black;
+}
+
+.wrapper{
+display: flex;
+gap: 20px;
+padding: 20px;
+
+}
+
+.from{
+  height: 280px;
+  width: 300px;
+  /* background:lightblue; */
+  border: 1px dotted white;
+  border-radius: 10px;
+}
+
+.to{
+  height: 280px;
+  width: 300px;
+  /* background: lightcoral; */
+  border: 1px dotted white;
+  border-radius: 10px;
+}
+
+.dragelement{
+  height: 40px;
+  border-radius: 10px;
+  margin: 2px;
+  color: white;
+  background-color: seagreen;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:grab;
+}
+
+h1{
+  font-size: 20px;
+}
+
+.dragelement.whileDragging{
+  opacity: 0.3;
+  background-color: orange;
+}

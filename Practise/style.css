@@ -1,0 +1,49 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilory";
+}
+
+html{
+      font-size: 62.5%;
+  }
+body{
+      font-size: 1.6rem;
+  }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  /* background-color:#D0D4CA; */
+  background-color: rgba(20, 19, 19, 0.821);
+}
+
+.conntainer{
+  height: 50%;
+  width: 100%;
+  background-color: salmon;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dragelement{
+  margin: 10px;
+  background-color: green;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: white;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+.dragelement.dragging{
+  opacity: 0.4;
+  background-color: lightskyblue;
+}
