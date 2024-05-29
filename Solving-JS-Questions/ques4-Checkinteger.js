@@ -2,7 +2,7 @@
 
 // Normal way: 
 var num = 12
-num%1 === 0? console.log("integer") : console.log("not an integer" )
+num%1 === 0? console.log("integer") : console.log("not an integer" ) /* Ternary Operator*/
 
 // Without ternary 
 if(num % 1 == 0){

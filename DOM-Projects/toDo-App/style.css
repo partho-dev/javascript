@@ -1,0 +1,15 @@
+.list{
+    margin-top: 2vw;
+    width: 50%;
+    background-color: lightblue;
+    display: flex;
+    gap: 2vw;
+    padding: 1vw 2vw;
+}
+
+.delBtn{
+    border: none;
+    background-color: aqua;
+    border-radius: 2vw;
+    color: green;
+}
