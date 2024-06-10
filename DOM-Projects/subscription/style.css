@@ -1,0 +1,44 @@
+.main{
+  width: 250px;
+  background-color: rgba(66, 113, 105, 0.439);
+  padding: 10px;
+}
+
+.main h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.status{
+  display: flex;
+  gap: 20px;
+}
+
+.h4-1, .h4-2{
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.h4-3, .h4-4, .h4-4, .renewBtn {
+  display: none;
+}
+.ended{
+  color: red;
+}
+.active{
+  color: green;
+}
+.inactive{
+  color: rgb(110, 33, 33);
+}
+
+.renewBtn{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: pink;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.497);
+}
+
