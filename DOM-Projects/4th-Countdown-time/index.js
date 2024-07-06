@@ -12,16 +12,12 @@ startBtn.addEventListener("click", ()=>{
         startBtn.textContent = "Stop"
         startBtn.style.color = "red"
         resetBtn.style.backgroundColor = "red"
-
-
     }, 1000);
  }else{
     clearInterval(startCount)
     startBtn.textContent="Start"
     startBtn.style.color = "green"
-
- }
-    
+ }  
 })
 
 resetBtn.addEventListener("click", ()=>{

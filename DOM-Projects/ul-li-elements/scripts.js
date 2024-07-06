@@ -1,5 +1,5 @@
 let searchBox = document.querySelector(".searchBox")
-let searchBotton = document.querySelector(".searchBtn")
+let searchButton = document.querySelector(".searchBtn")
 
 let body = document.querySelector(".bodyFld")
 let p = document.createElement("p")
@@ -7,7 +7,7 @@ let p = document.createElement("p")
 let ul = document.createElement("ul")
 // let li = document.createElement("li")
 
-searchBotton.addEventListener("click", (e)=>{
+searchButton.addEventListener("click", (e)=>{
   e.preventDefault()
   let value = searchBox.value
   if(value.trim() !== ""){
