@@ -58,8 +58,8 @@ secondh4.appendChild(Activespan)
 
 ### How to Add items on the DOM by pressing "Enter" key on the keyboard
 1. Create one searchbox - `let searchBox = document.querySelector(".search-box")`
-2. Remember - The enter keyboard event can be fires using the event name `keyup` & it works only for `searchbox` which is `focused` 
-3. It `**does not**` work with any button like `submit` or `any button event`
+2. Remember - The enter keyboard event can be fired using the event name `keyup` & it works only for `searchbox` which is `focused` 
+3. It **does not** work with any button like `submit` or `any click event`
 4. So, dont run the event on the button, but only on the search box
 
 ```
@@ -79,6 +79,7 @@ secondh4.appendChild(Activespan)
 
 
 
+### How to Add items into DOM from an input box by clicking Submit Button
 1. First add all of them into an array
 2. input box - Search : 
 ```
